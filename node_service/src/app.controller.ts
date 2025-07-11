@@ -1,6 +1,7 @@
 import { Controller, Get, Put } from '@nestjs/common';
 import { AppService } from './app.service';
 
+
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
@@ -9,4 +10,13 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get('/json')
+  async getJson(): Promise<any> {
+    return this.appService.getJson();
+  }
 }
+
+
+
+
+
