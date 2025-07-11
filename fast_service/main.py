@@ -5,7 +5,7 @@ app = FastAPI()
 
 
 @app.get("/get_node_response")
-def read_root():
+def parse():
     response = requests.get("http://node_service:3000")
     print(response, flush=True)
     if response.status_code != 200:
@@ -14,5 +14,9 @@ def read_root():
     else:
         res = response.text
     return {"Hello": "World", "Node Service Response": res}
+
+@app.get("/")
+def read_root():
+    return {"details": "Hello World From FastAPI"}
 
 
