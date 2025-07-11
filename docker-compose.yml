@@ -10,3 +10,11 @@ services:
       - "8000:8000"
     environment:
       - PYTHONUNBUFFERED=1
+
+  node_service:
+    build:
+      context: ./node_service
+      dockerfile: Dockerfile
+    container_name: node_service
+    ports:
+      - "3000:3000"
