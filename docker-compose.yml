@@ -21,5 +21,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./node_service:/usr/src/app
+      - ./node_service:/node_service/src/app
     command: ["node", "dist/main"]
