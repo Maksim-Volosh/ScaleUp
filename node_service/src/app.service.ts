@@ -6,8 +6,9 @@ import { firstValueFrom } from 'rxjs';
 export class AppService {
   constructor(private readonly httpService: HttpService) {}
   
-  getHello(): string {
-    return 'Hello World! -_- !! iouytfbhkl jhgtfyrdcfhbk !';
+  getHelo(): string {
+    return 'Hello World! (.Y.) rferwfwfeweewwerweewrwerewrewerwwre';
+
   }
 
   async getJson(): Promise<any> {
