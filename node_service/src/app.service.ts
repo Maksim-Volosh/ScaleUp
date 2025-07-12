@@ -7,7 +7,7 @@ export class AppService {
   constructor(private readonly httpService: HttpService) {}
   
   getHelo(): string {
-    return 'Hello World! (.Y.) rferwfwfeweewwerweewrwerewrewerwwre';
+    return 'Hello World! (.Y.) ПЭЭЭНИС';
 
   }
 
